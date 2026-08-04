@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reparación de caminadoras en todos los municipios del estado de Puebla. Servicio a domicilio en Puebla capital, Cholula, Atlixco, Tehuacán, San Martín Texmelucan y más.">
+    <meta name="keywords" content="reparación caminadoras Puebla capital, reparación caminadoras Cholula, reparación caminadoras Atlixco, reparación caminadoras Tehuacán, reparación caminadoras San Martín Texmelucan, técnico caminadoras estado de Puebla">
+    <title>Reparación de Caminadoras en todos los municipios de Puebla | Servicio a domicilio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background-color: #f4f7fc;
+            color: #1e2a3e;
+            line-height: 1.5;
+        }
+        .bg-fade {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('treadmill03.jpg');
+            background-size: cover;
+            opacity: 0.06;
+            z-index: -2;
+            pointer-events: none;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #ffffff 0%, #eef2f5 100%);
+            z-index: -1;
+            pointer-events: none;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        header {
+            background: #0b2b3b;
+            color: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .logo h1 {
+            font-size: 1.5rem;
+        }
+        .logo p {
+            font-size: 0.8rem;
+            color: #9ec8da;
+        }
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .phone-secondary {
+            font-size: 0.8rem;
+            margin-top: 6px;
+            color: #cbd5e1;
+            text-align: right;
+        }
+        .btn-primary {
+            background-color: #e67e22;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .municipio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        .municipio-card {
+            background: white;
+            border-radius: 28px;
+            padding: 24px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            transition: 0.2s;
+        }
+        .municipio-card:hover {
+            transform: translateY(-5px);
+        }
+        .municipio-card h3 {
+            color: #e67e22;
+            margin-bottom: 12px;
+            font-size: 1.5rem;
+        }
+        .address-block {
+            background: #0b2b3b;
+            color: white;
+            border-radius: 28px;
+            padding: 32px;
+            margin: 50px 0;
+            text-align: center;
+        }
+        nav {
+            background: #1a4a5f;
+            padding: 12px 0;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .nav-links a:hover {
+            color: #e67e22;
+        }
+        footer {
+            text-align: center;
+            padding: 40px 0 24px;
+            border-top: 1px solid #cbd5e1;
+        }
+        .hero-small {
+            text-align: center;
+            padding: 40px 0 20px;
+        }
+        .hero-small h1 {
+            font-size: 2.2rem;
+            color: #0b2b3b;
+        }
+        @media (max-width: 768px) {
+            .header-flex {
+                flex-direction: column;
+                text-align: center;
+            }
+            .phone-secondary {
+                text-align: center;
+            }
+            .hero-small h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="bg-fade"></div>
+<div class="overlay"></div>
+
+<header>
+    <div class="container header-flex">
+        <div class="logo">
+            <h1>⚙️ Reparación Caminadora</h1>
+            <p>Servicio en todo el estado de Puebla</p>
+        </div>
+        <div>
+            <a href="https://wa.me/5212216498364?text=Hola%2C%20necesito%20reparar%20mi%20caminadora%20en%20mi%20municipio" class="whatsapp-btn" target="_blank">📱 WhatsApp +1 469 556 3548</a>
+            <div class="phone-secondary">📞 Tel. secundario: 221 649 8364</div>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tarjeta-electronica.html">Tarjeta Electrónica</a></li>
+            <li><a href="precios.html">Precios</a></li>
+            <li><a href="municipios-puebla.html">Municipios</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="container">
+    <div class="hero-small">
+        <h1>Reparación de caminadoras en <br>todos los municipios de Puebla</h1>
+        <p style="font-size: 1.2rem; margin-top: 16px;">Servicio a domicilio en Puebla capital y todo el estado. ¡Estamos donde nos necesites!</p>
+        <a href="https://wa.me/5212216498364?text=Hola%2C%20vengo%20de%20la%20página%20de%20municipios%20y%20necesito%20reparar%20mi%20caminadora" class="btn-primary" style="margin-top: 20px; display: inline-block;" target="_blank">📲 Cotizar para mi municipio</a>
+    </div>
+
+    <div class="municipio-grid">
+        <div class="municipio-card">
+            <h3>🏙️ Puebla capital</h3>
+            <p>Atendemos todas las colonias de la ciudad de Puebla: Las Ánimas, Angelópolis, Centro, La Paz, San Manuel, Lomas, Zona Esmeralda, y más. Diagnóstico y reparación el mismo día en la mayoría de los casos.</p>
+        </div>
+        <div class="municipio-card">
+            <h3>⛪ San Andrés Cholula</h3>
+            <p>Servicio a domicilio en San Andrés Cholula, Santiago Momoxpan, San Bernardino Tlaxcalancingo y toda el área. Especialistas en tarjeta electrónica y motores.</p>
+        </div>
+        <div class="municipio-card">
+            <h3>⛪ San Pedro Cholula</h3>
+            <p>Cubrimos todo San Pedro Cholula, incluyendo el centro, San Cristóbal Tepontla, y colonias aledañas. Respuesta rápida por WhatsApp.</p>
+        </div>
+        <div class="municipio-card">
+            <h3>🌋 Atlixco</h3>
+            <p>Reparación de caminadoras en Atlixco y Metepec. Acudimos a tu domicilio sin importar la zona. Presupuesto sin compromiso.</p>
+        </div>
+        <div class="municipio-card">
+            <h3>🏭 San Martín Texmelucan</h3>
+            <p>Cobertura completa en San Martín Texmelucan y comunidades cercanas. Reparamos toda marca y modelo.</p>
+        </div>
+        <div class="municipio-card">
+            <h3>🏜️ Tehuacán</h3>
+            <p>Servicio en Tehuacán y la región de la Sierra Negra. Para este municipio, coordinamos visitas programadas. ¡Contáctanos!</p>
+        </div>
+        <div class="municipio-card">
+            <h3>🏘️ Cuautlancingo</h3>
+            <p>Atendemos Cuautlancingo, incluyendo Lomas de San Angelo, El Trébol, y San Lorenzo Almecatla. Diagnóstico el mismo día.</p>
+        </div>
+        <div class="municipio-card">
+            <h3>🌳 Coronango</h3>
+            <p>Reparación a domicilio en Coronango, Santa María Coronango, San Francisco Tepeyac y más.</p>
+        </div>
+        <div class="municipio-card">
+            <h3>🔥 Huejotzingo</h3>
+            <p>Cubrimos Huejotzingo y la zona industrial. Servicio técnico especializado en caminadoras domésticas y comerciales.</p>
+        </div>
+        <div class="municipio-card">
+            <h3>⛰️ Zacatlán</h3>
+            <p>Para Zacatlán y la Sierra Norte, programamos visitas periódicas. Consulta disponibilidad por WhatsApp.</p>
+        </div>
+        <div class="municipio-card">
+            <h3>💎 Tecamachalco</h3>
+            <p>Servicio en Tecamachalco y la región de los Valles Centrales. Reparación de tarjeta electrónica y motores.</p>
+        </div>
+        <div class="municipio-card">
+            <h3>🌾 Izúcar de Matamoros</h3>
+            <p>Atendemos Izúcar de Matamoros y la región Mixteca Poblana. Cotiza sin compromiso.</p>
+        </div>
+    </div>
+
+    <div style="background: #eef2fa; border-radius: 28px; padding: 32px; text-align: center; margin: 20px 0;">
+        <h3>📢 ¿No ves tu municipio aquí?</h3>
+        <p style="margin-top: 12px;">Atendemos <strong>cualquier municipio del estado de Puebla</strong>. Solo escríbenos por WhatsApp y coordinamos una visita. Para municipios lejanos, puede aplicarse un cargo adicional por traslado que se cotiza por separado.</p>
+        <a href="https://wa.me/5212216498364?text=Hola%2C%20vivo%20en%20[escribe%20tu%20municipio]%20y%20necesito%20reparar%20mi%20caminadora" class="btn-primary" style="margin-top: 20px; background-color: #25D366;" target="_blank">💬 Preguntar por mi municipio</a>
+    </div>
+
+    <div class="address-block">
+        <h3>📍 Base en Las Ánimas, pero atendemos todo Puebla</h3>
+        <p><strong>📧 info@reparacioncaminadora.com</strong> | 📱 WhatsApp principal: +1 469 556 3548 | 📞 221 649 8364</p>
+        <p style="margin-top: 12px;">🌐 Servicio a domicilio en Puebla capital, Cholula, Atlixco, San Martín Texmelucan, Tehuacán, Cuautlancingo, Coronango, Huejotzingo, Zacatlán, Tecamachalco, Izúcar de Matamoros y todo el estado de Puebla.</p>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Reparación Caminadora – Servicio técnico de caminadoras en todos los municipios del estado de Puebla.</p>
+        <p><a href="index.html" style="color: #e67e22;">← Volver al inicio</a> | <a href="tarjeta-electronica.html" style="color: #e67e22;">Tarjeta electrónica</a> | <a href="precios.html" style="color: #e67e22;">Precios</a></p>
+    </div>
+</footer>
+</body>
+</html>
